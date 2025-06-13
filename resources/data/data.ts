@@ -1,23 +1,28 @@
 export const MenuSite = [
     {
         id:1,
-        title:"Accueil"
+        title:"Accueil",
+        section:"home"
     },
     {
         id:2,
-        title:"Exposants"
+        title:"Exposants",
+        section:"exposants"
     },
     {
         id:3,
-        title:"Programme"
+        title:"Programme",
+        section:"programme"
     },
     {
         id:4,
-        title:"Infos pratiques"
+        title:"Infos pratiques",
+        section:"infos"
     },
     {
         id:5,
-        title:"Contact"
+        title:"Contact",
+        section:"contact"
     },
 ]
 

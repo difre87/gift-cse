@@ -27,7 +27,7 @@ const Contact = () => {
         });
     };
     return (
-        <section className="w-full bg-[#2C3058]  py-20 relative">
+        <section className="w-full bg-[#2C3058]  py-20 relative" id="contact">
             <div className="max-w-screen-xl mx-auto w-full">
                 <div className="grid grid-cols-3 gap-10">
                     <div className="col-span-1 flex flex-col justify-between h-full">

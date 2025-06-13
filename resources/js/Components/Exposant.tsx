@@ -8,7 +8,7 @@ import { ExposantItems } from "../../data/data";
 
 const Exposant = () => {
     return (
-        <section className="w-full bg-white">
+        <section className="w-full bg-white" id="exposants">
             <div className="max-w-screen-xl w-full mx-auto">
                 <div className="w-full flex justify-center items-center mb-20">
                     <Title

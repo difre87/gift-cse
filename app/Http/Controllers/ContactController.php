@@ -21,7 +21,7 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('contact@gift-cse.com')->send(new ContactFormMail($validated));
+        Mail::to('leila.dussoubs@idm-com.fr')->send(new ContactFormMail($validated));
 
         return redirect()->back()->with('success', 'Message envoyé avec succès.');
     }

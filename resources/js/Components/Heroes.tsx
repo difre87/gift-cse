@@ -4,7 +4,10 @@ import Header from "./Header";
 
 const Heroes = () => {
     return (
-        <section className="w-full h-screen relative bg-amber-100 bg-[url('/resources/assets/chateau.png')] bg-cover bg-center bg-no-repeat relative after:content['] overflow-hidden z-20">
+        <section
+            id="home"
+            className="w-full h-screen relative bg-amber-100 bg-[url('/resources/assets/chateau.png')] bg-cover bg-center bg-no-repeat relative after:content['] overflow-hidden z-20"
+        >
             <div className="flex-flex-col">
                 <Header />
 

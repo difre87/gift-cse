@@ -4,7 +4,7 @@ import { Mail, Phone } from "lucide-react";
 
 const TimeLine = () => {
     return (
-        <section className="w-full bg-white relative pt-30">
+        <section className="w-full bg-white relative pt-30" id="infos">
             <div className="max-w-screen-xl mx-auto w-full flex justify-center items-center mb-20 relative z-20">
                 <Title
                     title="Infos pratiques"

@@ -2,7 +2,10 @@ import Title from "./Title";
 
 const Vip = () => {
     return (
-        <section className="w-full bg-transparent py-20 relative z-10">
+        <section
+            className="w-full bg-transparent py-20 relative z-10"
+            id="programme"
+        >
             <div className="w-full h-[640px] bg-transparent relative -mt-72 z-30">
                 <div className="w-full h-[440px] bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden"></div>
                 <div className="w-[1300px] h-[300px] bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5"></div>
