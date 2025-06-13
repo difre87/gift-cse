@@ -12,6 +12,8 @@ import Vip from "../Components/Vip";
 import AppLayout from "../Layout/AppLayout";
 
 const Index = () => {
+    console.log('Rendering Index Page');
+    
     return (
         <AppLayout>
             <div className="absolute top-[30%] w-[800px] h-[1600px] right-0 bg-[url('/resources/assets/images/right-side.svg')] bg-cover bg-no-repeat bg-center z-10">
