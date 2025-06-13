@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@font-face {
+    font-family: "jedira";
+    src: url("./fonts/Jedira-Regular.ttf");
+
+}
+
+html, body{
+    height: 100%;
+    position: relative;
+}
+body {
+    @apply font-sans;
+    overflow-x: hidden;
+}
+.jedira{
+    font-family: "jedira";
+}
+.swiper-pagination {
+    @apply !mt-5 !relative;
+}
+.swiper-pagination-bullet {
+    @apply !w-3 !h-3 !bg-[#47A185] opacity-60 rounded-full;
+}
+.swiper-pagination-bullet-active {
+    @apply !bg-[#47A185] opacity-100 w-4 h-4;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.roboto-semibold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-extrabold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.custom-shape-divider-bottom-1749744674 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1749744674 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1749744674 .shape-fill {
+    fill: #FFFFFF;
+}
+.bg-pos{
+    background-position: center top -472px;
+}
+.bg-pos-left{
+    background-position: center left -1150px;
+}
+
