@@ -26,14 +26,14 @@ const Exposant = () => {
                 >
                     {ExposantItems.map((exposant) => (
                         <SwiperSlide className="flex flex-col  justify-center items-center gap-8">
-                            <div className="w-24  mx-auto">
+                            <div className="w-32 h-28 flex justify-center items-center  mx-auto">
                                 <img
                                     src={exposant.imageUrl}
                                     alt={exposant.title}
                                     className="w-full object-cover"
                                 />
                             </div>
-                            <div className="flex flex-col justify-center items-center">
+                            <div className="flex flex-col justify-center items-center py-2">
                                 <h4 className="text-[#2C3058] font-bold text-lg">
                                     {exposant.title}
                                 </h4>

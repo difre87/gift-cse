@@ -117,7 +117,7 @@ const TimeLine = () => {
                                     </li>
                                 </ul>
                                 <DownloadButton
-                                    title="Réserver <b>une nuité</b>"
+                                    title="Réserver&nbsp <b> une nuité</b>"
                                     className="h-12"
                                 />
                                 <ul className="flex flex-col gap-y-4 justify-center  text-lg text-[#2C3058] roboto-regular">
