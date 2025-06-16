@@ -1,19 +1,17 @@
 import { Calendar, CalendarDays, Clock5, Gift, MapPin } from "lucide-react";
 import DownloadButton from "./DownloadButton";
-import Header from "./Header";
 
 const Heroes = () => {
     return (
         <section
             id="home"
-            className="w-full h-screen relative bg-amber-100 bg-[url('/resources/assets/chateau.png')] bg-cover bg-center bg-no-repeat relative after:content['] overflow-hidden z-20"
+            className="w-full h-screen relative bg-amber-100 bg-[url('/resources/assets/chateau.png')] bg-cover bg-center bg-no-repeat relative after:content['] overflow-hidden z-10"
         >
+            <div className="absolute left-0 right-0 bottom-0 top-0 bg-black/50"></div>
             <div className="flex-flex-col">
-                <Header />
-
                 <div className="max-w-screen-xl w-full mx-auto z-30 relative h-full">
                     <div className="grid grid-cols-2 h-full">
-                        <div className="flex flex-col gap-4 py-5">
+                        <div className="flex flex-col gap-4 py-30">
                             <div className="bg-[#F8AD47] py-2 px-5 rounded-r-full flex items-center gap-x-2 w-[85%]">
                                 <Gift className="text-[#2C3058] w-6 h-6" />
                                 <h2 className="text-[#2C3058] text-2xl poppins-medium">
@@ -28,7 +26,7 @@ const Heroes = () => {
                             </div>
                             <div className="flex  gap-2 flex-col px-5">
                                 <h1 className="text-[58px] text-white  poppins-bold leading-18">
-                                    Une journée VIP pour les CSE dans un lieux
+                                    Une journée VIP pour les CSE dans un lieu
                                     d'exception
                                 </h1>
                                 <h4 className="text-white text-md flex roboto-regular">
@@ -40,7 +38,7 @@ const Heroes = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className="flex justify-end relative py-5 pr-5">
+                        <div className="flex justify-end relative py-30 pr-5">
                             <div className=" px-4 flex justify-center gap-y-2 flex-col bg-[#2C3058E5] rounded-xl w-72 h-36">
                                 <div className="flex items-center gap-2">
                                     <CalendarDays className="text-white w-5 h-5" />

@@ -3,12 +3,12 @@ import Title from "./Title";
 
 const Gift = () => {
     return (
-        <section className="w-full bg-tranparent  relative z-50">
-            <div className="w-full h-[640px] bg-transparent relative -mt-96 z-30 ">
-                <div className="w-full h-[440px]  bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden"></div>
-                <div className="w-[1300px] h-[300px]  bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5 "></div>
+        <section className="w-full bg-tranparent  relative  z-20">
+            <div className="w-full h-[640px] bg-transparent relative -mt-96 ">
+                <div className="w-full h-[440px]  bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden z-5"></div>
+                <div className="w-[1300px] h-[300px]  bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5 z-5 "></div>
             </div>
-            <div className="flex flex-col gap-1 absolute top-[25%] right-[11%] z-50">
+            <div className="flex flex-col gap-1 absolute top-[25%] right-[11%]  bg-white z-30">
                 <div className="flex gap-2">
                     <img
                         src="./images/medaille.svg"
@@ -91,7 +91,7 @@ const Gift = () => {
                         , rien que pour vous, élus CSE!
                     </h2>
                     <DownloadButton
-                        title="Je télécharge mon <b>badge gratuit</b>"
+                        title="Je télécharge mon &nbsp<b>badge gratuit</b>"
                         className="h-12"
                         linkHref={"https://app.imagina.com/gift--cse/443285"}
                     />

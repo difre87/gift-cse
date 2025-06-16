@@ -30,7 +30,7 @@ const Activite = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center pl-10 gap- relative z-10">
+                    <div className="flex flex-col justify-center pl-10 gap- relative">
                         <Title
                             title="Des activités inédites <br/>et  <span class='text-[#F8AD47]'>totalement gratuites</span>"
                             className="text-4xl pb-10"
@@ -46,7 +46,7 @@ const Activite = () => {
                             <li>Et d’autres surprises…</li>
                         </ul>
                         <DownloadButton
-                            title="Je télécharge <b>mon badge gratuit</b>"
+                            title="Je télécharge &nbsp<b>mon badge gratuit</b>"
                             className="w-[320px] mt-8 h-12"
                             linkHref={
                                 "https://app.imagina.com/gift--cse/443285"

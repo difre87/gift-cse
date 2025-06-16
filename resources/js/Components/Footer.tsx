@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, Phone } from "lucide-react";
 import DownloadButton from "./DownloadButton";
+import { scrollToSection } from "../types/type";
 
 const Footer = () => {
     return (
@@ -41,30 +42,34 @@ const Footer = () => {
                         </div>
                         <div className="grid grid-cols-2">
                             <div className="grid grid-cols-2 pl-5">
-                                <a
-                                    href="#"
-                                    className="text-lg text-white roboto-regular relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
+                                <button
+                                    onClick={(e) => scrollToSection("home")}
+                                    className="text-lg text-white roboto-regular cursor-pointer relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
                                 >
                                     Accueil
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-lg text-white roboto-regular relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
+                                </button>
+                                <button
+                                    onClick={(e) =>
+                                        scrollToSection("programme")
+                                    }
+                                    className="text-lg text-white roboto-regular cursor-pointer relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
                                 >
                                     Programme
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-lg text-white roboto-regular relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
+                                </button>
+                                <button
+                                    onClick={(e) =>
+                                        scrollToSection("exposants")
+                                    }
+                                    className="text-lg text-white roboto-regular cursor-pointer relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
                                 >
                                     Exposants
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-lg text-white roboto-regular relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
+                                </button>
+                                <button
+                                    onClick={(e) => scrollToSection("infos")}
+                                    className="text-lg text-white no-underline roboto-regular cursor-pointer relative before:absolute before:w-[5px] before:h-[5px] before:rounded-full before:bg-white before:bottom-[40%] before:-translate-y-[40%] before:-left-4 hover:underline transition-all duration-300"
                                 >
                                     Infos pratiques
-                                </a>
+                                </button>
                             </div>
                             <div className="flex flex-col">
                                 <div className="flex gap-2">
@@ -82,7 +87,7 @@ const Footer = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-end pl-20">
                         <DownloadButton
-                            title="Je télécharge <b>mon badge gratuit</b>"
+                            title="Je télécharge &nbsp<b>mon badge gratuit</b>"
                             className="w-full h-14 mb-1"
                             linkHref={
                                 "https://app.imagina.com/gift--cse/443285"

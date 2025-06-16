@@ -8,6 +8,8 @@ import OfferGift from "../Components/OfferGift";
 import Sep from "../Components/Sep";
 import TimeLine from "../Components/TimeLine";
 import Vip from "../Components/Vip";
+import Header from "../Components/Header";
+
 
 import AppLayout from "../Layout/AppLayout";
 
@@ -16,12 +18,13 @@ const Index = () => {
 
     return (
         <AppLayout>
-            <div className="absolute top-[30%] w-[800px] h-[1600px] right-0 bg-[url('/resources/assets/images/right-side.svg')] bg-cover bg-no-repeat bg-center z-10">
+            <div className="absolute top-[30%] w-[800px] h-[1600px] right-0 bg-[url('/resources/assets/images/right-side.svg')] bg-cover bg-no-repeat bg-center">
 
             </div>
-            <div className="absolute top-[10%] w-[1000px] h-[1700px] left-0 bg-pos-left bg-[url('/resources/assets/images/left-side.svg')] bg-cover bg-no-repeat bg-center z-50">
+            <div className="absolute top-[10%] w-[1000px] h-[1700px] left-0 bg-pos-left bg-[url('/resources/assets/images/left-side.svg')] bg-cover bg-no-repeat bg-center">
 
             </div>
+            <Header/>
             <Heroes />
 
             <Gift />

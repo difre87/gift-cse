@@ -65,14 +65,20 @@ export const ExposantItems = [
     },
     {
         id:6,
+        title:"D&H EVENEMENTIEL",
+        description:"Organisateur d'événements d'entreprise",
+        imageUrl:"./images/exposants/6.png"
+    },
+    {
+        id:7,
         title:"CFTC",
         description:"Organisation syndicale",
-        imageUrl:"./images/exposants/6.png"
+        imageUrl:"./images/exposants/7.png"
     },
     {
         id:7,
         title:"XD CONNECT",
         description:"Cadeaux et bagagerie",
-        imageUrl:"./images/exposants/7.png"
+        imageUrl:"./images/exposants/8.png"
     },
 ]

@@ -1,14 +1,15 @@
 import Title from "./Title";
 import DownloadButton from "./DownloadButton";
 import { Mail, Phone } from "lucide-react";
+import { scrollToSection } from "../types/type";
 
 const TimeLine = () => {
     return (
-        <section className="w-full bg-white relative pt-30" id="infos">
+        <section className="w-full bg-white relative pt-30 z-30" id="infos">
             <div className="max-w-screen-xl mx-auto w-full flex justify-center items-center mb-20 relative z-20">
                 <Title
                     title="Infos pratiques"
-                    className="text-4xl !text-[#47A185]  bg-white py-5 relative z-20"
+                    className="text-4xl !text-[#47A185]  py-5 relative"
                 />
             </div>
             <div className="max-w-screen-xl mx-auto w-full pb-20">
@@ -56,7 +57,8 @@ const TimeLine = () => {
                                         La Chapelle-Saint-Mesmin"{" "}
                                     </span>
                                     sur l’autoroute
-                                    <span className="text-[#47A185]">A10</span>.
+                                    <span className="text-[#47A185]"> A10</span>
+                                    .
                                 </li>
                             </ul>
                             <span className="text-md text-[#2C3058] roboto-regular">
@@ -64,7 +66,7 @@ const TimeLine = () => {
                                 sortie.
                             </span>
                             <DownloadButton
-                                title="Itinéraire <b>sur Maps</b>"
+                                title="Itinéraire &nbsp<b>sur Maps</b>"
                                 className="h-12 !bg-[#2C3058] mt-5 hover:!bg-[#47A185]"
                                 linkHref="https://maps.app.goo.gl/gAenF9bcWNZYRNsn9"
                             />
@@ -116,10 +118,17 @@ const TimeLine = () => {
                                         (sur réservation, contactez-nous)
                                     </li>
                                 </ul>
-                                <DownloadButton
-                                    title="Réserver&nbsp <b> une nuité</b>"
+                                <button
+                                    onClick={(e) => scrollToSection("contact")}
+                                    className="bg-[#F8AD47] px-10 py-3 rounded-lg text-white cursor-pointer duration-500 ease-in-out transition-all hover:bg-[#2C3058]"
+                                >
+                                    Réserver <b> une Nuitée</b>
+                                </button>
+                                {/* <DownloadButton
+                                    title=""
                                     className="h-12"
-                                />
+
+                                /> */}
                                 <ul className="flex flex-col gap-y-4 justify-center  text-lg text-[#2C3058] roboto-regular">
                                     <li className="flex gap-x-3 items-center">
                                         <Phone />
@@ -187,7 +196,7 @@ const TimeLine = () => {
                                 </li>
                             </ul>
                             <DownloadButton
-                                title="Itinéraire <b>sur Maps</b>"
+                                title="Itinéraire &nbsp<b>sur Maps</b>"
                                 className="h-12 !bg-[#47A185] mt-5 hover:!bg-[#F8AD47]"
                                 linkHref="https://maps.app.goo.gl/gAenF9bcWNZYRNsn9"
                             />

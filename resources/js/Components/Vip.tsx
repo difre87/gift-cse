@@ -3,7 +3,7 @@ import Title from "./Title";
 const Vip = () => {
     return (
         <section
-            className="w-full bg-transparent py-20 relative z-10"
+            className="w-full bg-transparent py-20 relative"
             id="programme"
         >
             <div className="w-full h-[640px] bg-transparent relative -mt-72 z-30">
@@ -32,14 +32,14 @@ const Vip = () => {
                         </ul>
                     </div>
                     <div className="w-full flex relative gap-x-20">
-                        <div className="w-64 h-[430px] rounded-full overflow-hidden relative top-32 z-30 group">
+                        <div className="w-64 h-[430px] rounded-full overflow-hidden relative top-32 group">
                             <img
                                 src="./images/food.jpg"
                                 alt="gift&cse"
                                 className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-500 ease-in-out"
                             />
                         </div>
-                        <div className="w-64 h-[430px] rounded-full overflow-hidden relative -top-32 z-30">
+                        <div className="w-64 h-[430px] rounded-full overflow-hidden relative -top-20 ">
                             <img
                                 src="./images/burger.jpg"
                                 alt="gift&cse"

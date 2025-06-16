@@ -31,7 +31,7 @@ const OfferGift = () => {
         }
     }, [activeIndex]);
     return (
-        <section className="w-full bg-transparent pt-20 pb-40 relative z-50">
+        <section className="w-full bg-transparent pt-20 pb-40 relative">
             <div className="max-w-screen-xl mx-auto w-full">
                 <div className="grid grid-cols-2 gap-30">
                     <div className="flex gap-10">
@@ -93,11 +93,11 @@ const OfferGift = () => {
                             </li>
                             <li>à chaque participant</li>
                             <li className="text-sm">
-                                (Limité à 2 visiteur par CSE, badge requis)
+                                (Limité à 2 visiteurs par CSE, badge requis)
                             </li>
                         </ul>
                         <DownloadButton
-                            title="Je télécharge <b>mon badge gratuit</b>"
+                            title="Je télécharge &nbsp<b>mon badge gratuit</b>"
                             className="w-80 h-12 mt-20"
                             linkHref={
                                 "https://app.imagina.com/gift--cse/443285"

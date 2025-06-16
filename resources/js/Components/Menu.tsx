@@ -1,13 +1,6 @@
 import { MenuSite } from "../../data/data";
+import { scrollToSection } from "../types/type";
 const Menu = () => {
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-        } else {
-            console.warn(`Section with ID ${sectionId} not found.`);
-        }
-    };
     return (
         <div className="flex gap-12">
             {MenuSite.map((menu) => (
