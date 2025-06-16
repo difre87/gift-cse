@@ -31,11 +31,11 @@ const OfferGift = () => {
         }
     }, [activeIndex]);
     return (
-        <section className="w-full bg-transparent pt-20 pb-40 relative">
-            <div className="max-w-screen-xl mx-auto w-full">
-                <div className="grid grid-cols-2 gap-30">
+        <section className="w-full bg-transparent md:pt-20 pb-40 relative">
+            <div className="md:max-w-screen-xl mx-auto w-full md:px-0 px-3">
+                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-30 gap-y-5">
                     <div className="flex gap-10">
-                        <div className="flex flex-col gap-2">
+                        <div className="md:flex flex-col gap-2 hidden">
                             {Images.map((image, index) => (
                                 <div
                                     key={index}
@@ -66,7 +66,7 @@ const OfferGift = () => {
                             pagination={{ clickable: true }}
                             slidesPerView={1}
                             spaceBetween={10}
-                            className="flex-1 flex border-[1px] border-[#F5F5F5] h-[410px] rounded-lg"
+                            className="flex-1 flex border-[1px] border-[#F5F5F5] md:h-[410px] h-[300px] rounded-lg"
                         >
                             {Images.map((image, index) => (
                                 <SwiperSlide key={index}>
@@ -79,15 +79,20 @@ const OfferGift = () => {
                             ))}
                         </Swiper>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="relative md:hidden flex  items-center">
+                        <span className="roboto-light italic text-[10px] text-[#2C3058] md:py-3 block">
+                            *Photos non contractuelles.
+                        </span>
+                    </div>
+                    <div className="flex flex-col justify-center items-center md:items-start w-full md:px-0 px-3">
                         <Title
                             title="<span class='text-[#F8AD47] uppercase'>Cadeaux offerts</span><br/> à tous les visiteurs"
-                            className="text-4xl pb-10"
+                            className="md:text-4xl text-2xl pb-10"
                         />
-                        <p className="text-lg text-[#2C3058] mb-5">
+                        <p className="md:text-lg text-md text-center text-[#2C3058] mb-5">
                             Parce que vous êtes importants pour nous...
                         </p>
-                        <ul className=" text-[#2C3058] text-lg">
+                        <ul className=" text-[#2C3058] md:text-lg text-sm text-center md:text-left">
                             <li className="text-[#F8AD47]">
                                 Un cadeau premium (valeur 30€) offert
                             </li>
@@ -98,14 +103,14 @@ const OfferGift = () => {
                         </ul>
                         <DownloadButton
                             title="Je télécharge &nbsp<b>mon badge gratuit</b>"
-                            className="w-80 h-12 mt-20"
+                            className="md:w-80 h-12 md:mt-20 mt-10 !flex text-sm !px-8"
                             linkHref={
                                 "https://app.imagina.com/gift--cse/443285"
                             }
                         />
                     </div>
                 </div>
-                <div className="relative">
+                <div className="relative hidden">
                     <span className="roboto-light italic text-sm text-[#2C3058] py-3 block">
                         *Photos non contractuelles.
                     </span>

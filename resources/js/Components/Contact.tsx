@@ -27,29 +27,32 @@ const Contact = () => {
         });
     };
     return (
-        <section className="w-full bg-[#2C3058]  py-20 relative" id="contact">
-            <div className="max-w-screen-xl mx-auto w-full">
-                <div className="grid grid-cols-3 gap-10">
-                    <div className="col-span-1 flex flex-col justify-between h-full">
-                        <div className="flex flex-col">
+        <section
+            className="w-full bg-[#2C3058]  py-20 relative md:mt-0 mt-80"
+            id="contact"
+        >
+            <div className="md:max-w-screen-xl md:mx-auto w-full px-3 md:px-0">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
+                    <div className="md:col-span-1 flex flex-col justify-between items-center h-full">
+                        <div className="flex flex-col justify-center items-center">
                             <Title
                                 title="Contactez-nous"
-                                className="text-[#F8AD47] text-4xl pb-5"
+                                className="text-[#F8AD47] md:text-4xl text-2xl pb-5"
                             />
-                            <h4 className="roboto-bold text-2xl text-white">
+                            <h4 className="roboto-bold md:text-2xl text-sm text-center text-white">
                                 Une question ? Besoin d'assistance ?
                             </h4>
-                            <h4 className="roboto-regular text-[20px] text-white">
+                            <h4 className="roboto-regular md:text-[20px] text-[12px] text-white">
                                 Remplissez le formulaire ou appelez-nous :
                             </h4>
                         </div>
                         <img
                             src="./images/logo-white.svg"
                             alt="contact"
-                            className="w-32 mt-5"
+                            className="md:w-32 md:mt-5 hidden md:block"
                         />
                     </div>
-                    <div className="col-span-2 flex flex-col px-10">
+                    <div className="col-span-2 flex flex-col md:px-10">
                         {flash?.success && (
                             <div className="success-message w-full bg-[#47A185] text-white roboto-medium py-3 mb-5 rounded-lg flex justify-center items-center">
                                 {flash.success}
@@ -75,7 +78,7 @@ const Contact = () => {
                                     .querySelector('meta[name="csrf-token"]')
                                     ?.getAttribute("content")}
                             />
-                            <div className="w-full grid grid-cols-2 gap-5">
+                            <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-5">
                                 <div className="flex flex-col">
                                     <label className="roboto-bold font-lg pb-2 text-white">
                                         Nom/Prénom
@@ -116,7 +119,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full grid grid-cols-2 gap-5">
+                            <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-5">
                                 <div className="flex flex-col">
                                     <label className="roboto-bold font-lg pb-2 text-white">
                                         Téléphone
@@ -167,9 +170,9 @@ const Contact = () => {
                                                     e.target.value
                                                 )
                                             }
-                                            className="rounded-lg h-full   w-[90%] focus-ring-0 outline-none p-5 text-white"
+                                            className="rounded-lg h-full  md:w-[90%] w-full focus-ring-0 outline-none p-5 text-white"
                                         ></textarea>
-                                        <div className="h-full relative w-[10%]">
+                                        <div className="h-full relative w-[10%] hidden md:block">
                                             <button
                                                 type="submit"
                                                 disabled={processing}
@@ -203,6 +206,40 @@ const Contact = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="h-full relative w-full md:hidden">
+                                <button
+                                    type="submit"
+                                    disabled={processing}
+                                    className="w-full h-12 rounded-lg cursor-pointer bg-orange-300 flex justify-center items-center"
+                                >
+                                    {processing ? (
+                                        <svg
+                                            className="animate-spin h-10 w-10 mr-2 text-white"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <circle
+                                                className="opacity-25"
+                                                cx="12"
+                                                cy="12"
+                                                r="10"
+                                                stroke="currentColor"
+                                                strokeWidth="4"
+                                            ></circle>
+                                            <path
+                                                className="opacity-75"
+                                                fill="currentColor"
+                                                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                            ></path>
+                                        </svg>
+                                    ) : (
+                                        <span className="text-xl roboto-bold text-white">
+                                            Envoyer
+                                        </span>
+                                    )}
+                                </button>
                             </div>
                         </form>
                     </div>

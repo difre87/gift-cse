@@ -2,7 +2,7 @@ import { MenuSite } from "../../data/data";
 import { scrollToSection } from "../types/type";
 const Menu = () => {
     return (
-        <div className="flex gap-12">
+        <div className="md:flex gap-12 hidden">
             {MenuSite.map((menu) => (
                 <button
                     key={menu.id}

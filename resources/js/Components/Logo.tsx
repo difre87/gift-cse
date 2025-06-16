@@ -1,6 +1,6 @@
 const Logo = () => {
     return (
-        <a href="#" className="w-40 h-12">
+        <a href="#" className="w-32 md:w-40 h-12">
             <img
                 src="./images/logo.png"
                 alt=""
