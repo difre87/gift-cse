@@ -55,7 +55,7 @@ const Heroes = () => {
                                 <div className="flex items-center gap-2">
                                     <Clock5 className="text-white md:w-5 md:h-5 w-4 h-4" />
                                     <h3 className="text-white md:text-lg text-sm Roboto-regular">
-                                        09:00 - 19:00
+                                        09:00 - 17:00
                                     </h3>
                                 </div>
                             </div>

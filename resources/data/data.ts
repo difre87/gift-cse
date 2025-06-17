@@ -76,9 +76,15 @@ export const ExposantItems = [
         imageUrl:"./images/exposants/7.png"
     },
     {
-        id:7,
+        id:8,
         title:"XD CONNECT",
         description:"Cadeaux et bagagerie",
         imageUrl:"./images/exposants/8.png"
+    },
+    {
+        id:9,
+        title:"NOTORAMA",
+        description:"Créateur de convivialité",
+        imageUrl:"./images/exposants/logo-notaroma.svg"
     },
 ]

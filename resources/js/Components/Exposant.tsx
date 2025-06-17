@@ -23,11 +23,15 @@ const Exposant = () => {
                     navigation={false}
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 5000 }}
-                    className="!hidden md:block"
+                    className="!hidden md:!block"
                 >
                     {ExposantItems.map((exposant) => (
                         <SwiperSlide className="flex flex-col  justify-center items-center md:gap-8">
-                            <div className="w-32 h-28 flex justify-center items-center  mx-auto">
+                            <div
+                                className={`w-32 h-28 flex justify-center items-center  mx-auto ${
+                                    exposant.id === 9 ? "bg-black px-4 " : ""
+                                }`}
+                            >
                                 <img
                                     src={exposant.imageUrl}
                                     alt={exposant.title}
