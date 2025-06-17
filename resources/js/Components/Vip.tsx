@@ -8,8 +8,8 @@ const Vip = () => {
             id="programme"
         >
             <div className="w-full md:h-[640px] h-[200px] bg-transparent relative md:-mt-72 -mt-32 md:z-30">
-                <div className="w-full md:h-[440px] h-[100px] bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden"></div>
-                <div className="md:w-[1300px] w-full md:h-[300px] bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5"></div>
+                <div className="w-full md:h-[440px] h-[100px] h-img bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden"></div>
+                <div className="md:w-[1300px] img-full w-full md:h-[300px] bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5"></div>
             </div>
             <div className="md:w-36 md:h-36 w-24 h-24 absolute md:top-[13%] -top-[10%] md:left-[40%] right-0 z-50">
                 <img

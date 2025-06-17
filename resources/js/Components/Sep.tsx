@@ -1,9 +1,9 @@
 const Sep = () => {
     return (
-        <section className="w-full h-[550px] -mt-[400px] bg-transparent relative bg-[url('/resources/assets/images/group.jpg')] bg-cover bg-no-repeat bg-pos z-10">
-            <div className="w-full h-full bg-[url('/resources/assets/images/green-curve.svg')] bg-contain bg-no-repeat relative -top-12"></div>
-            {/* <div className="w-full h-full bg-[url('/resources/assets/images/group.jpg')] bg-cover bg-no-repeat  bg-pos relative top-12"></div> */}
-        </section>
+        <div className="w-full bg-transparent relative md:-mt-[375px] z-20">
+            <div className="w-full md:h-[433px] h-[450px]  bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden z-5"></div>
+            <div className="w-[1300px] h-[300px]  bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5 z-5 hidden md:block"></div>
+        </div>
     );
 };
 

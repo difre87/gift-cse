@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 const Gift = () => {
     return (
         <section className="w-full bg-tranparent  relative  z-20">
-            <div className="w-full h-[640px]  bg-transparent relative -mt-96 ">
-                <div className="w-full md:h-[440px] h-[440px]  bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden z-5"></div>
-                <div className="w-[1300px] h-[300px]  bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5 z-5 hidden md:block"></div>
+            <div className="w-full h-[640px] full-height bg-transparent relative -mt-96 mm">
+                <div className="w-full  md:h-[440px] h-[440px] h-img  bg-[url('/resources/assets/images/green-curve.png')] bg-no-repeat bg-cover relative -top-14 overflow-hidden z-5"></div>
+                <div className="w-[1300px] h-[300px] img-full  bg-[url('/resources/assets/images/blue-curve.svg')] bg-cover bg-no-repeat absolute top-24 -left-5 z-5 hidden md:block"></div>
             </div>
             <div className="flex flex-col gap-1 absolute md:top-[25%] top-[28%]  md:right-[5%] right-[30%]  bg-white z-30">
                 <div className="flex items-center gap-2">
@@ -38,7 +38,7 @@ const Gift = () => {
                 <div className="w-full">
                     <Title
                         title="Gratuit, gourmand, prestigieux : <br/> le salon CSE que vous attendiez"
-                        className="text-center md:text-4xl text-2xl md:leading-12 leading-10"
+                        className="text-center md:text-4xl text-2xl md:leading-10 leading-10"
                     />
                 </div>
                 <div className=" mt-10 md:hidden px-3">
